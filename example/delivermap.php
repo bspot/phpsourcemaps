@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . "../src/SourceMap.php";
+require_once __DIR__ . "/../src/SourceMap.php";
 
 $scripts = array('script1.js', 'script2.js');
 
@@ -25,4 +25,4 @@ foreach ($scriptinfo as $script => $info) {
   $offset += $info['lines']-1;
 }
 
-print $map->generate();
+print $map->generateJSON();

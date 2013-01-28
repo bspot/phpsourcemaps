@@ -23,7 +23,7 @@ class SourceMap {
       "file" => $this->out_file,
       "sourceRoot" => "",
       "sources" => $this->source_files,
-      "names" => $this->names,
+      "names" => array(),
       "mappings" => $this->generateMappings()
     ));
   }
